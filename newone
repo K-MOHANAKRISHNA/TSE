@@ -1,0 +1,1097 @@
+Style.css
+
+.centerdiv {
+    position : fixed;
+    left: 50%;
+    top: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px cornflowerblue;
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+.header-right {
+    float: right;
+}
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+#left{
+    float: left;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    margin: 50px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+}
+
+
+Home.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="MeanStack" />
+    <meta
+      name="keywords"
+      content="Online shopping site for mobiles, electronics, furniture, grocery, lifestyle, books & more. Best Offers!"
+    />
+    <meta name="author" content="third cse" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="2" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav id="logo">
+        <a href="hompage.html" class="logo">
+          <img src="logo.png" height="50x" width="50x" />E-kart
+        </a>
+      </nav>
+      <nav class="header-right">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Track Order</a>
+        <a href="About.html">About Us</a>
+      </nav>
+    </header>
+    <br />
+    <div class="centerdiv">
+      <p style="font-size: medium; font-family: 'Times New Roman', serif">
+        IEKart's is an online shopping website that sells goods in retail. This
+        company deals with various categories like Electronics, Clothing,
+        Accessories etc
+      </p>
+      <h1>Today Offers</h1>
+      <section>
+        <h2>OFfers on samsung Mobile</h2>
+        <p>offers on s21, s23, A50 <a href="#">please check</a></p>
+      </section>
+      <section>
+        <h2>Offers on Shoes</h2>
+        <p>
+          Offers on Nike , Addidas, Sketchers <a href="#">please check </a>...
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
+
+Aboutus.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav id="logo">
+        <a href="Home.html" class="logo">
+          <img src="logo.png" height="50x" width="50px" />E-kart
+        </a>
+      </nav>
+      <nav class="header-right">
+        <a href="#">Login</a>
+        <a href="#">Singnup</a>
+        <a href="#">Track Order</a>
+        <a href="About.html">Aboutus</a>
+      </nav>
+    </header>
+    <div id="left">
+      <h1>About Lab</h1>
+      <ul type="Square">
+        <li>
+          Develop professional webpages of an application using html elements
+        </li>
+        <li>
+          Utilize javascript for developing interactive html web pages and
+          validat form data.
+        </li>
+        <li>
+          Build a basic web serve using node.js and also working with node
+          package manager
+        </li>
+        <li>Build a web serve using express.js</li>
+        <li>
+          Make use of type script to optimize java script code by using the
+          concept of strict type checking.
+        </li>
+      </ul>
+    </div>
+    <div id="left">
+      <h1>About Website</h1>
+      <ul type="circle">
+        <li>it is demo type of application for E-kart</li>
+        <li>like flipkart,amazon,myntra,Ajio,...etc</li>
+        <li>
+          For front end .we need to use few technologies like
+          html5,css,javascript
+        </li>
+        <li>For Back-end we need to use Nodejs, expressjs,Typescript</li>
+        <li>
+          Through this lab we will get good idea on E-commerce applications
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+
+
+2a
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/test/menu.html" method="get">
+      <table align="center">
+        <tr>
+          <td>Username</td>
+          <td><input type="text" id="usrname" required /></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" id="pwd" required /></td>
+        </tr>
+        <tr>
+          <td>Enter your Branch</td>
+          <td>
+            <fieldset>
+              <legend>Select your Branch</legend>
+              <input type="radio" name="branch" />cse <br />
+              <input type="radio" name="branch" />i.t <br />
+              <input type="radio" name="branch" />ece <br />
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>Skill set</td>
+          <td>
+            <fieldset>
+              <legend>Select your skill's</legend>
+              <input type="checkbox" name="C" /> C <br />
+              <input type="checkbox" name="C++" />C++ <br />
+              <input type="checkbox" name="java" />java
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>Enter Email</td>
+          <td><input type="email" id="idem" /></td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" id="idsub" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+
+
+
+2b
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="MeanStack" />
+    <meta
+      name="keywords"
+      content="Online Shopping Site for Mobiles, Electronics, Furniture, 
+        Grocery, Lifestyle, Books & More. Best Offers!"
+    />
+    <meta name="author" content="third cse" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="/Exercise-1/style.css" />
+    <style>
+      .divcontent {
+        position: fixed;
+        left: 50%;
+        top: 45%;
+        max-width: 500px;
+        background-color: lightsteelblue;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divcontent">
+      <div
+        style="
+          background-color: blue;
+          color: white;
+          max-width: 500px;
+          text-align: center;
+        "
+      >
+        Color and Date Pickers, Select and Datalist Elements
+      </div>
+      <table>
+        <tr>
+          <td>Color Picker :</td>
+          <td><input type="color" /></td>
+        </tr>
+        <tr>
+          <td>Datepicker</td>
+          <td>
+            <input type="date" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label> Select city </label>
+          </td>
+          <td>
+            <input list="citys" />
+            <datalist id="citys">
+              <option value="Hyderabad"></option>
+              <option value="Bangalore"></option>
+              <option value="Visakhapatnam"></option>
+            </datalist>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
+
+
+2c
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="MeanStack" />
+    <meta
+      name="keywords"
+      content="Online Shopping Site for Mobiles, Electronics, Furniture, 
+Grocery, Lifestyle, Books & More. Best Offers!"
+    />
+    <meta name="author" content="third cse" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="/Exercise-1/style.css" />
+    <style>
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        border: none;
+        height: 100%;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+        width: 100%;
+      }
+      .divcontent {
+        /*margin-left: 50px; 
+    margin-right: 50px; 
+    margin-top: 50px;*/
+        position: fixed;
+        left: 50%;
+        top: 45%;
+        max-width: 500px;
+        background-color: lightsteelblue;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+      }
+      h3 {
+        color: white;
+        max-width: 500px;
+        background-color: blue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav id="logo">
+        <a href="/exercise-1/home.html" class="logo">
+          <img src="/Exercise-1/logo.png" height="50x" width="50px" />E-kart
+        </a>
+      </nav>
+      <nav class="header-right">
+        <a href="#">Login</a>
+        <a href="#">Singnup</a>
+        <a href="#">Track Order</a>
+        <a href="#"> </a>
+        <a href="About.html">Aboutus</a>
+      </nav>
+    </header>
+    <body>
+      <div class="divcontent">
+        <div
+          style="
+            background-color: blue;
+            color: white;
+            max-width: 500px;
+            text-align: center;
+          "
+        >
+          Registration
+        </div>
+        <table>
+          <tr>
+            <td>
+              <input type="text" id="txtinp" placeholder="Username" required />
+            </td>
+            <td>
+              <input
+                type="password"
+                id="txtpwd"
+                placeholder="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="txtpincode" placeholder="Pincode" />
+            </td>
+            <td>
+              <input type="text" id="txtlocation" placeholder="Location" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea
+                cols="55"
+                rows="6"
+                id="address"
+                placeholder="Address(Area and 
+    Street)"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="txtcity" placeholder="City/Town" />
+            </td>
+            <td>
+              <select id="states">
+                <option>---Select---</option>
+                <option>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Bihar</option>
+                <option>Jharkhand</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="txtpincode" placeholder="Landmark" />
+            </td>
+            <td>
+              <input type="text" id="txtlocation" placeholder="Phone" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">Address:</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="address" />Home address</td>
+            <td><input type="radio" name="address" />Work</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="submit" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </body>
+  </body>
+</html>
+
+
+
+2d
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="MeanStack" />
+    <meta
+      name="keywords"
+      content="Online shopping site for mobiles, electronics, furniture, grocery, lifestyle, books & more. Best Offers!"
+    />
+    <meta name="author" content="third cse" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="2" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/exercise-1/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav id="logo">
+        <a href="hompage.html" class="logo">
+          <img src="logo.png" height="50x" width="50x" />E-kart
+        </a>
+      </nav>
+      <nav class="header-right">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Track Order</a>
+        <a href="About.html">About Us</a>
+      </nav>
+    </header>
+    <br />
+    <div class="centerdiv">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/a425hb1Zsjc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+  </body>
+</html>
+
+
+
+3a
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const pi = 3.14;
+      var r = 9;
+      function FindArea(r) {
+        return pi * r * r;
+      }
+      let Area = FindArea(r);
+      document.writeln("The area of circle with radius :r, is",Area);
+    </script>
+  </head>
+  <body>
+    <br />
+  </body>
+</html>
+
+
+3b
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie Rating</title>
+    <style>
+      .divcontent {
+        /*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        max-width: 500px;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: darkorange;
+        color: white;
+        border: none;
+        height: 100%;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divcontent">
+      <div class="row">
+        <h2>Enter Movie details....</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <input type="text" id="mname" placeholder="Moviename" />
+        </div>
+        <div class="column">
+          <input type="text" id="mstar" placeholder="staring" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <input type="text" id="lang" placeholder="Language" />
+        </div>
+        <div class="column">
+          <input type="text" id="rating" placeholder="ratings" />
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" onclick="movies()" value="Submit" />
+      </div>
+      <br />
+      <div class="row" id="tbl"></div>
+    </div>
+    <script>
+      function movies() {
+        let M_name;
+        let M_star;
+        let lang;
+        let rating;
+        M_name = document.getElementById("mname").value;
+        M_star = document.getElementById("mstar").value;
+        lang = document.getElementById("lang").value;
+        rating = document.getElementById("rating").value;
+        starring = M_star.split(",");
+        let htm = `<table border=1> 
+<tr> <td> Move Name: </td> <td width:100%>${M_name} </td> </tr>
+<tr> <td> Starring: </td> <td width:100%>${starring} </td> </tr>
+<tr> <td> Language: </td> <td width:100%>${lang} </td> </tr>
+<tr> <td> Ratings: </td> <td width:100%>${rating} </td> </tr> 
+</table>`;
+        document.getElementById("tbl").innerHTML = htm;
+      }
+    </script>
+  </body>
+</html>
+
+
+3c
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Movie Tickets...</title>
+    <style>
+      .divcontent {
+        /*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        max-width: 500px;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      /* Clear floats after the columns */
+      .row::after {
+        display: table;
+        clear: both;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: darkorange;
+        color: white;
+        border: none;
+        height: 100%;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divcontent">
+      <div class="row">Book tickets ...</div>
+      <div class="row">
+        <div class="column">
+          <select id="mvs" name="movies">
+            <option>Select Movie</option>
+            <option>RRR</option>
+            <option>Avatar-2</option>
+          </select>
+        </div>
+        <div class="column">
+          <input type="text" id="not" placeholder="Number Of Tickets" />
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="ADD" onclick="show_price()" />
+      </div>
+      <div id="price"></div>
+      <div id="totaltickets"></div>
+    </div>
+    <script>
+      function show_price() {
+        const ticketcost = 150;
+        let discountpercent = 10;
+        let not = document.getElementById("not").value;
+        let mn = document.getElementById("mvs").value;
+        let discountprice = (ticketcost * discountpercent) / 100;
+        let totalprice = ticketcost - discountprice;
+        let finalprice = `For Movie ${mn}: Cost of ${not} tickets ${
+          totalprice * not
+        }`;
+        document.getElementById("price").innerHTML = finalprice;
+      }
+    </script>
+  </body>
+</html>
+
+4a
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Movie Tickets...</title>
+    <style>
+      .divcontent {
+        /*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        max-width: 500px;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      /* Clear floats after the columns */
+      .row::after {
+        display: table;
+        clear: both;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: darkorange;
+        color: white;
+        border: none;
+        height: 100%;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divcontent">
+      <div class="row">Book tickets ...</div>
+      <div class="row">
+        <div class="column">
+          <select id="mvs" name="movies">
+            <option>Select Movie</option>
+            <option>RRR</option>
+            <option>Avatar-2</option>
+          </select>
+        </div>
+        <div class="column">
+          <input type="text" id="not" placeholder="Number Of Tickets" />
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="ADD" onclick="calculate_price()" />
+      </div>
+      <div id="price"></div>
+      <div id="totaltickets"></div>
+    </div>
+    <script>
+      function calculate_price() {
+        const ticketcost = 150;
+        let discountpercent = 10;
+        let not = document.getElementById("not").value;
+        let mn = document.getElementById("mvs").value;
+        if (not > 2 && not < 6) {
+          let sub = (discountpercent) => {
+            return (ticketcost * discountpercent) / 100;
+          };
+          let discountprice = sub(discountpercent) - ticketcost;
+          let finalprice = `For Movie ${mn}: Cost of ${not} tickets ${
+            discountprice * not
+          }`;
+          document.getElementById("price").innerHTML = finalprice;
+        }
+        if (not <= 2) {
+          let finalprice = `For Movie ${mn}: Cost of ${not} tickets ${
+            ticketcost * not
+          }`;
+          document.getElementById("price").innerHTML = finalprice;
+        }
+        if (not >= 6) {
+          document.getElementById("price").innerHTML =
+            "If seats are 6 or more than 6, booking is not allowed";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+4b
+class Person{
+    constructor(P_name,P_age) {
+    this.P_name = P_name;
+    this.P_age = P_age;
+    }
+    }
+    class employee extends Person{
+    constructor(P_name,P_age,E_salary,E_id){
+    super(P_name,P_age);
+    this.salary = E_salary;
+    this.id= E_id;
+    }
+    Show() {
+    console.log('PersonName:' 
+    + this.P_name,'PersonAge:'+ this.P_age,'EmployeeSalary:'+ this.salary, 'Employee_Id:' + this.id);
+    }
+    }
+    let obj= new employee("Raju",25,20000,4705);
+    obj.Show();
+
+
+-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>length Validation</title>
+  </head>
+  <body>
+    <input type="text" id="txtinput" onkeyup="keypress()" />
+    <div id="msg"></div>
+    <script>
+      keypress = () => {
+        txtvalue = document.getElementById("txtinput").value;
+        if (txtvalue.length <= 4) {
+          document.getElementById("msg").style.color = "red";
+          document.getElementById("msg").innerHTML =
+            "<h4> input must be between 4 and 10 characters </h4>";
+        } else if (txtvalue.length > 10) {
+          document.getElementById("msg").style.color = "red";
+          document.getElementById("msg").innerHTML =
+            "<h4> input must be between 4 and 10 characters </h4>";
+        } else {
+          document.getElementById("msg").style.color = "green";
+          document.getElementById("msg").innerHTML = "<h4> Valid input </h4>";
+        }
+      };
+    </script>
+  </body>
+</html>
+
+
+4c
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Movie Tickets...</title>
+    <style>
+      .divcontent {
+        /*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        max-width: 500px;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      /* Clear floats after the columns */
+      .row::after {
+        display: table;
+        clear: both;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: darkorange;
+        color: white;
+        border: none;
+        height: 100%;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divcontent">
+      <div class="row">Book tickets ...</div>
+      <div class="row">
+        <div class="column">
+          <select id="mvs" name="movies">
+            <option>Select Movie</option>
+            <option>RRR</option>
+            <option>Avatar-2</option>
+          </select>
+        </div>
+        <div class="column">
+          <input
+            type="text"
+            id="not"
+            placeholder="Number Of Tickets"
+            onkeyup="show_price()"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="ADD" onclick="show_price()" />
+      </div>
+      <div id="price"></div>
+      <div id="totaltickets"></div>
+    </div>
+    <script>
+      function show_price() {
+        const ticketcost = 150;
+        let discountpercent = 10;
+        let not = document.getElementById("not").value;
+        let mn = document.getElementById("mvs").value;
+        let discountprice = (ticketcost * discountpercent) / 100;
+        let totalprice = ticketcost - discountprice;
+        if (not > 2 && not < 6) {
+          let finalprice = `For Movie ${mn}: Cost of ${not} tickets ${
+            totalprice * not
+          }`;
+          document.getElementById("price").innerHTML = finalprice;
+        } else if (not <= 2) {
+          let finalprice = `For Movie ${mn}: Cost of ${not} tickets ${
+            ticketcost * not
+          }`;
+          document.getElementById("price").innerHTML = finalprice;
+        } else {
+          let finalprice = " 6 or more than 6 tickets not allowed to book. ";
+          document.getElementById("price").innerHTML = finalprice;
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+5a
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Movie details</h3>
+    <div id="md"></div>
+  </body>
+  <script>
+    var Movie_details = [
+      { Name: "RRR", Starring: "Ramcharn,ntr" },
+      {
+        Name: "Bahubali",
+        Starring: "Prabas",
+      },
+    ];
+    let output = document.getElementById("md");
+    let result = ``;
+    for (let i = 0; i < Movie_details.length; i++) {
+      result +=
+        `MovieName: ${Movie_details[i].Name} , Starring: ${Movie_details[i].Starring}` +
+        " ";
+    }
+    output.innerHTML = result;
+  </script>
+</html>
+
+
+5b
+function getRandomstockprice() { 
+    // generate a random number between -1 and 1(inclusive) 
+    return Math.floor(Math.random() * 3) - 1; } 
+function displayPrice(price) { 
+    console.log("Current price: $" + price.toFixed(2)); 
+}
+function PriceChanges() { 
+    let price = 100; // starting price 
+    const interval = setInterval(() => { 
+        // generate a random price change 
+        const priceChange = getRandomstockprice(); // update the price 
+        price += priceChange; // display the price on the console 
+        displayPrice(price); }, 3000); // invoke the function every 3 seconds 
+    // stop the changes after 30 seconds (10 iterations) 
+    setTimeout(() => { 
+        clearInterval(interval); 
+        console.log("Changes stopped"); 
+        }, 30000); 
+    } 
+
+// start the changes of price 
+PriceChanges();
+
+
+5c
+
+Login.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <b> Username: </b> <input type="text" id="un" /> <b> Password: </b>
+    <input type="password" id="pwd" />
+    <input type="submit" onclick="validate()" />
+  </body>
+</html>
+
+
+Login.js
+
+class user
+{
+constructor(un,pwd)
+{
+this.un = un;
+this.pwd = pwd;
+}
+validate()
+{
+if((this.un=="admin") && (this.pwd=="admin"))
+{
+alert("Login Successful...");
+}
+else
+{
+alert("Wrong Login...");
+}
+}
+}
+function validate()
+{
+un = document.getElementById('un').value;
+pwd = document.getElementById('pwd').value;
+Obj = new user(un,pwd);
+Obj.validate();
+}
+
+
